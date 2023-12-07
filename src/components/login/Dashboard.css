@@ -1,0 +1,25 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  margin-top: 300px;
+  background-color: #999;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.confirm-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #242725;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+  background-color: #ffe60094;
+}

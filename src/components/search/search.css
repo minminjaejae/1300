@@ -1,0 +1,157 @@
+body {
+  font-family: "SpoqaHanSansNeo-Regular", "Franklin Gothic Medium", sans-serif;
+}
+body {
+  margin-top: 10%;
+  text-align: center;
+  height: 10vh;
+}
+
+img.logo {
+  width: 30%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+h1 {
+  text-indent: -999px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  content: "";
+  /* 추가적으로 background-size 속성을 지정해보세요. */
+  background-size: cover;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  margin-top: 20px;
+  border-radius: 25px;
+  border: 1px solid;
+  width: 80%;
+  height: 50px;
+  font-size: 1.6rem;
+  text-indent: 45px;
+  outline: none;
+}
+button:first-child {
+  position: relative;
+  left: 45px;
+}
+button:last-child {
+  position: relative;
+  right: 45px;
+}
+
+.fail {
+  margin: 50% auto;
+}
+
+.fail img:nth-child(1) {
+  animation: fail 2s ease-in-out infinite reverse;
+  transition: 2s;
+}
+.fail img:nth-child(2) {
+  position: relative;
+  top: -100px;
+  animation: hover 2s ease-in-out infinite reverse;
+  transition: 2s;
+}
+
+.fail p {
+  margin: 20% 0;
+  width: 100%;
+}
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+    rotate: 15deg;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes fail {
+  0% {
+    scale: 1;
+    filter: grayscale(0);
+  }
+
+  50% {
+    filter: grayscale(1);
+    transform: translateY(10px);
+  }
+
+  100% {
+    filter: grayscale(0);
+    scale: 1;
+  }
+}
+
+ul.categories {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0;
+}
+.cateBox {
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff9c5;
+}
+.categories li {
+  margin: 15px 0;
+}
+
+.categories a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 15px;
+}
+
+hr {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.searchList {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.searchList img {
+  width: 100px;
+  height: 150px;
+}
+
+.searchNav {
+  display: flex;
+}
+.searchNav a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 20px;
+}
+.searchList p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
